@@ -13,6 +13,9 @@ export default {
 					secondary: "#ffffff",
 				},
 			},
+			fontFamily: {
+				jakarta: ["Plus Jakarta Sans", "serif"],
+			},
 		},
 	},
 	plugins: [],
