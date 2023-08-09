@@ -2,3 +2,19 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@layer components {
+    .primary-gradient {
+        @apply bg-gradient-to-r from-gradient-start to-gradient-end via-gradient-via1;
+    }
+    .secondary-gradient {
+        @apply bg-gradient-to-r from-gradient-start to-gradient-end via-gradient-via2;
+    }
+    .ease-transition {
+        @apply transition-all duration-200 ease-in-out cursor-pointer;
+    }
+}
+
+::-webkit-scrollbar {
+    width: 0px;
+    /* Adjust the width as needed */
+}
