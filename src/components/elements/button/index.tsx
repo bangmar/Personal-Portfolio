@@ -6,7 +6,7 @@ type TButtonProps = {
 	name: string;
 	classname?: string;
 	teks: string;
-	disabled: boolean;
+	disabled?: boolean;
 };
 
 const Button: FC<TButtonProps> = ({
