@@ -10,13 +10,13 @@ const HomeProjects: FC = (): ReactElement => {
 			name: "Learning Experience Platform",
 			thumb: "assets/home/projects/lxp.png",
 			techs: ["Next Js", "Tailwind Css", "TypeScript"],
-			link: "https://mknows-fe-lxp.vercel.app/",
+			link: "https://github.com/magang-mknows/mknows-fe",
 		},
 		{
 			name: "Kampus Gratis Website",
 			thumb: "assets/home/projects/kg.png",
 			techs: ["Next Js", "Tailwind Css", "TypeScript"],
-			link: "https://mknows-fe-kg.vercel.app/",
+			link: "https://github.com/magang-mknows/mknows-fe",
 		},
 		{
 			name: "IoT Monitoring Dashboard",
@@ -62,9 +62,9 @@ const HomeProjects: FC = (): ReactElement => {
 				</header>
 			</ContentLayout>
 			<ContentLayout classname='xl:!grid-cols-2 lg:!grid-cols-1 !py-2 '>
-				{projects.slice(0, 2).map(({ name, techs, thumb }, index) => {
+				{projects.slice(0, 2).map(({ name, techs, thumb, link }, index) => {
 					return (
-						<Card key={index}>
+						<Card key={index} link={link}>
 							<Card.Image src={thumb} name={name} />
 							<Card.Description title={name} subtitle='Tech'>
 								<footer>
@@ -89,9 +89,9 @@ const HomeProjects: FC = (): ReactElement => {
 				})}
 			</ContentLayout>
 			<ContentLayout classname='xl:!grid-cols-3 !py-0'>
-				{projects.slice(2).map(({ name, techs, thumb }, index) => {
+				{projects.slice(2).map(({ name, techs, thumb, link }, index) => {
 					return (
-						<Card key={index}>
+						<Card key={index} link={link}>
 							<Card.Image src={thumb} name={name} />
 							<Card.Description title={name} subtitle='Tech' size='small'>
 								<footer>

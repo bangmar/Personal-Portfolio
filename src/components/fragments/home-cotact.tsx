@@ -13,7 +13,7 @@ const HomeContact = () => {
 				</h1>
 				<p className='text-neutral-300 text-sm md:text-base mb-8'>
 					Honestly, if you're a UI/UX Designer, Projects Manager, Backend
-					Developer and you all need some that will happyly help your projects
+					Developer and you all need a guy that will happyly help your projects
 					from client side or Frontend Developement using React or Next Js, fell
 					free to contact me.
 				</p>
@@ -24,35 +24,35 @@ const HomeContact = () => {
 					</section>
 					<section className='flex  gap-2 items-center'>
 						<AiOutlineMail />
-						<p>mariosihaloho700@gmail.com</p>
+						<p>mariosihaloho700@gmail.com</p>6
 					</section>
 				</footer>
 			</section>
 			<form>
-				<InputField>
-					<InputField.label htmlfor='name' label='Your Name' />
-					<InputField.input
-						name='name'
-						placeholder='Enter your name'
-						type='text'
-					/>
-				</InputField>
 				<InputField>
 					<InputField.label htmlfor='name' label='Your Email' />
 					<InputField.input
 						name='name'
 						placeholder='Enter your email'
 						type='email'
+						isRequired
 					/>
 				</InputField>
 				<InputField>
 					<InputField.label
-						htmlfor='describle'
+						htmlfor='message'
 						label='Tell me something you want me to do'
 					/>
-					<InputField.textArea col={4} id='describe' name='describle' row={8} />
+					<InputField.textArea
+						col={4}
+						id='describe'
+						name='describle'
+						row={8}
+						isRequired
+					/>
 				</InputField>
 				<Button
+					disabled={true}
 					classify='primary'
 					name={"submit"}
 					teks={"Submit"}

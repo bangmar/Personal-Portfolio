@@ -24,7 +24,7 @@ const HomeSertificate: FC = (): ReactElement => {
 					Learning Enthusiasm
 				</h1>
 				<h1 className='font-bold text-3xl md:text-4xl lg:text-5xl'>
-					Web Development, Organization and Intership Hunter
+					Web Development, React Js, Next JS Addict
 				</h1>
 			</aside>
 			<main>

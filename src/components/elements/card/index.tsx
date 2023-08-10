@@ -1,19 +1,30 @@
 import { FC, ReactElement, ReactNode } from "react";
 import { LazyLoadImage } from "react-lazy-load-image-component";
+import { Link } from "react-router-dom";
 
 type TCardProps = {
 	children: ReactNode;
+	link?: string;
 };
 
 const Card: FC<TCardProps> & {
 	Image: typeof Image;
 	Description: typeof Description;
-} = ({ children }): ReactElement => {
+} = ({ children, link = "" }): ReactElement => {
 	return (
-		<section className='mb-8'>
-			<section className='w-full h-full relative group overflow-hidden cursor-pointer'>
-				{children}
-			</section>
+		<section className='mb-8 overflow-hidden'>
+			{link !== "" ? (
+				<Link
+					to={link}
+					target='_blank'
+					className='w-full h-full relative group overflow-hidden cursor-pointer'>
+					{children}
+				</Link>
+			) : (
+				<section className='w-full h-full relative group overflow-hidden cursor-pointer'>
+					{children}
+				</section>
+			)}
 		</section>
 	);
 };
