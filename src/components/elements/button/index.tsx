@@ -6,6 +6,7 @@ type TButtonProps = {
 	name: string;
 	classname?: string;
 	teks: string;
+	disabled?: boolean;
 };
 
 const Button: FC<TButtonProps> = ({
@@ -14,9 +15,11 @@ const Button: FC<TButtonProps> = ({
 	type,
 	classname,
 	teks,
+	disabled = false,
 }) => {
 	return (
 		<button
+			disabled={disabled}
 			className={`border-2  h-9 w-fit   px-4 rounded-full  shadow-md transition-all duration-150 ease-transition ${classname} ${
 				classify === "primary"
 					? "secondary-gradient hover:primary-gradient border-transparent"

@@ -4,6 +4,7 @@ import ContentLayout from "../layouts/content-layout";
 import Button from "../elements/button";
 
 import { LazyLoadImage } from "react-lazy-load-image-component";
+import { Link } from "react-scroll";
 
 const HomeAbout: FC = (): ReactElement => {
 	const myRoutine: Array<string> = [
@@ -13,9 +14,9 @@ const HomeAbout: FC = (): ReactElement => {
 		"Learner",
 	];
 	return (
-		<section className=' mb-16 overflow-hidden'>
+		<section className=' mb-16 overflow-hidden' id='top'>
 			<ContentLayout classname='!py-0 !pb-10'>
-				<figure className='shadow-md mb-8 w-full  lg:grid lg:place-items-center overflow-hidden h-80 md:h-[36rem]  order-2'>
+				<figure className='shadow-md mb-8 w-full  flex justify-end overflow-hidden h-80 md:h-[36rem]  order-2'>
 					<LazyLoadImage
 						loading='lazy'
 						src='\assets\home\hero\hero.jpg'
@@ -30,7 +31,7 @@ const HomeAbout: FC = (): ReactElement => {
 					<h2 className='text-4xl md:text-5xl  mb-4 md:mb-6 font-medium'>
 						Lucky Frontend Web Developer
 					</h2>
-					<p className='text-sm md:text-base  mb-6 md:mb-8'>
+					<p className='text-sm md:text-base  mb-6 md:mb-10 lg:mb-12'>
 						I'm an Informatics Enginner Student and a React / Next JS Lover, I
 						also like to use other framework like Tailwind Css and more. Buy the
 						way, I like{" "}
@@ -40,17 +41,22 @@ const HomeAbout: FC = (): ReactElement => {
 						more then JS. Cheers. 🍻
 					</p>
 					<section className='flex gap-4'>
-						<Button
-							classify='primary'
-							name='get-me'
-							teks='GET IN TOUCH'
-							type='button'
-						/>
+						<Link
+							spy={true}
+							smooth={true}
+							offset={-90}
+							duration={500}
+							to='Contact'
+							className='secondary-gradient hover:primary-gradient border-transparent border-2  h-9 w-fit   px-4 rounded-full  shadow-md transition-all duration-150 ease-transition grid place-items-center'>
+							GET IN TOUCH
+						</Link>
+
 						<Button
 							classify='secondary'
 							name='download-cv'
 							teks='DOWNLOAD CV'
 							type='button'
+							disabled={false}
 						/>
 					</section>
 				</aside>
