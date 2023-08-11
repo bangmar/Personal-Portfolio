@@ -65,7 +65,7 @@ const HomeSertificate: FC = (): ReactElement => {
 										loading='lazy'
 										src={`assets/home/sertif/${sertificate}.jpg`}
 										alt={`${sertificate}-image`}
-										className='h-full w-full'
+										className='h-full w-full cursor-pointer'
 									/>
 								</figure>
 							);

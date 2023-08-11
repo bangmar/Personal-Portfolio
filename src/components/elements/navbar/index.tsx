@@ -21,6 +21,8 @@ const Navbar: FC = (): ReactElement => {
 
 	const [isToggled, setToggled] = useState(false);
 
+	console.log("toogle status :", isToggled);
+
 	return (
 		<section
 			className={`px-8  md:flex md:px-12 lg:px-24 justify-between  items-center flex gap-16 ${
@@ -59,7 +61,7 @@ const Navbar: FC = (): ReactElement => {
 					className={`md:hidden bg-neutral-100 rounded-sm shadow-md text-black-primary absolute right-16 table ${
 						isSticky ? "top-14" : "top-20 "
 					} ${
-						isToggled ? "-top-[400%]" : ""
+						isToggled ? "-top-[100%]" : ""
 					} transition-all duration-300 ease-in-out`}>
 					{links.map((link, index) => {
 						return (
@@ -82,9 +84,14 @@ const Navbar: FC = (): ReactElement => {
 				<section
 					className='md:hidden text-3xl cursor-pointer'
 					onClick={() => {
-						setToggled(!isToggled);
+						console.log("clicked");
 					}}>
-					<AiOutlineMenu />
+					<AiOutlineMenu
+						onClick={() => {
+							setToggled(!isToggled);
+							console.log("clicked");
+						}}
+					/>
 				</section>
 			</nav>
 		</section>
