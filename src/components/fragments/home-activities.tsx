@@ -10,7 +10,7 @@ const HomeActivities: FC = (): ReactElement => {
 				id='Experience'
 				title='Works Experience'
 				subtitle='Click to see my Works Activities'>
-				<main className='flex flex-col gap-6'>
+				<main className='flex flex-col gap-6' data-aos='zoom-in'>
 					{worksExperience.map(({ company, jobs, role, time }, index) => {
 						return (
 							<Disclosure key={index} as='section'>
@@ -57,7 +57,7 @@ const HomeActivities: FC = (): ReactElement => {
 				</main>
 			</ActivitiesLayout>
 			<ActivitiesLayout title='Education' subtitle='Click to see my Education '>
-				<main className='flex flex-col gap-6'>
+				<main className='flex flex-col gap-6' data-aos='zoom-in'>
 					{EducationExperience.map(({ dept, jobs, school, time }, index) => {
 						return (
 							<Disclosure key={index} as='section'>
