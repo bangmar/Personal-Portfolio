@@ -7,7 +7,7 @@ import {
 	SiTailwindcss,
 	SiPostman,
 	SiGithub,
-	SiRedux,
+	// SiRedux,
 } from "react-icons/si";
 import { FaReact, FaFigma } from "react-icons/fa";
 import { TbBrandVscode } from "react-icons/tb";
@@ -44,12 +44,12 @@ const HomeTools: FC = (): ReactElement => {
 				<SiTailwindcss className='text-4xl mb-2 rounded-md shadow-md text-blue-500' />
 			),
 		},
-		{
-			name: "Redux",
-			icon: (
-				<SiRedux className='text-4xl mb-2 rounded-md shadow-md text-purple-400' />
-			),
-		},
+		// {
+		// 	name: "Redux",
+		// 	icon: (
+		// 		<SiRedux className='text-4xl mb-2 rounded-md shadow-md text-purple-400' />
+		// 	),
+		// },
 		{
 			name: "VS Code",
 			icon: (

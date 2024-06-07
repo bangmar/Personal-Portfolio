@@ -8,10 +8,12 @@ import { Link } from "react-scroll";
 
 const HomeAbout: FC = (): ReactElement => {
 	const myRoutine: Array<string> = [
-		"Developer",
-		"Proggramer",
-		"Footballer",
-		"Learner",
+		"Slicing UI",
+		"Integrating API",
+		"Problem Solvoing",
+		"UI Design",
+		"Programming",
+		"Team Work",
 	];
 	return (
 		<section className=' mb-16 overflow-hidden' id='top'>

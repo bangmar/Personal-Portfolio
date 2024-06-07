@@ -44,7 +44,7 @@ const HomeSertificate: FC = (): ReactElement => {
 						<h1 className='font-bold text-sm secondary-gradient text-transparent bg-clip-text mb-2'>
 							Web Experience
 						</h1>
-						<p className='font-bold text-4xl'>1+ Years</p>
+						<p className='font-bold text-4xl'>1-2 Years</p>
 					</section>
 					<section>
 						<h1 className='font-bold text-sm secondary-gradient text-transparent bg-clip-text mb-2'>

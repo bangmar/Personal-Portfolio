@@ -8,7 +8,7 @@ const HomeActivities: FC = (): ReactElement => {
 		<ContentLayout classname='!gap-20 !py-0 !pt-10'>
 			<ActivitiesLayout
 				id='Experience'
-				title='Works Experience'
+				title='Works Experiences'
 				subtitle='Click to see my Works Activities'>
 				<main className='flex flex-col gap-6' data-aos='zoom-in'>
 					{worksExperience.map(({ company, jobs, role, time }, index) => {
@@ -16,7 +16,7 @@ const HomeActivities: FC = (): ReactElement => {
 							<Disclosure key={index} as='section'>
 								<Disclosure.Button
 									as='header'
-									className='flex  justify-between cursor-pointer items-center border-b border-neutral-500 pb-4'>
+									className='flex hover:bg-neutral-800 hover:pl-4 transition-all ease-in-out justify-between cursor-pointer items-center border-b border-neutral-500 pb-4 pt-2'>
 									<section>
 										<h1 className='font-bold text-sm md:text-base mb-1'>
 											{company}
@@ -63,7 +63,7 @@ const HomeActivities: FC = (): ReactElement => {
 							<Disclosure key={index} as='section'>
 								<Disclosure.Button
 									as='header'
-									className='flex  justify-between cursor-pointer items-center border-b border-neutral-500 pb-4'>
+									className='flex hover:bg-neutral-800 hover:pl-4 transition-all ease-in-out justify-between cursor-pointer items-center border-b border-neutral-500 pb-4 pt-2'>
 									<section>
 										<h1 className='font-bold text-sm md:text-base mb-1'>
 											{school}
