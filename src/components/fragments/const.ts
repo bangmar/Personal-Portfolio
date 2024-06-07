@@ -1,18 +1,29 @@
 export const worksExperience = [
 	{
-		company: "PT Menara Indonesia",
+		company: "PT Sagara Technology | Remote Jakarta Selatan",
+		role: "Frontend Developer Frelance",
+		time: "Jan 24 - Mar 24",
+		jobs: [
+			"Slicing UI atau mengkonversi desain untuk Backoffice dan Customer Side website penjualaran produk untuk sebuah brand laptop kedalam lebih dari 10 Halaman dengan Next Js Typescript dan Tailwind",
+			"Mengkonsumsi API yang disediakan oleh backend dengan library React Query dan Axio Axios untuk melakukan CRUD",
+			"Menerapkan state management dengan Recoil untuk fitur keranjang dan ineteraksi penguna",
+			"Melakukan push dan kode check menggunakan Gitlab sebagai Media Kolaborasi",
+		],
+	},
+	{
+		company: "PT Menara Indonesia | Tanggerang Selatan",
 		role: "Frontend Developer Intern",
 		time: "Feb 23 - Jun 23",
 		jobs: [
 			"Terlibat dalam Proyek Kampus Gratis dan bertanggungjawab menjadi PIC proyek LXP yang beranggotakan 3 Orang mengunakan Next Js 13",
-			"Melakukan Konversi Design kedalam Kode Program mengunakan Framework TailwindCSS dan Figma",
+			"Melakukan Konversi Design kedalam Kode Program mengunakan Framework Next JS Typescript dan TailwindCSS ",
 			"Mengintegrasikan API dari Backend Mengunakan React Query dan Axios serta melakukan pengecekan endpoint mengunakan Postman",
 			"Mengunakan GitHub sebagai Media Kolaborasi",
 			"Melaksanakan SCRUM sebagai metode pengembangan Softwere",
 		],
 	},
 	{
-		company: "Egrotek | Kedaireka Team",
+		company: "Egrotek | Teluk Purwokerto",
 		role: "Frontend Programmer",
 		time: "Agust 22 - Des 22",
 		jobs: [

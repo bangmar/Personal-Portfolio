@@ -58,11 +58,11 @@ const Navbar: FC = (): ReactElement => {
 					})}
 				</ul>
 				<ul
-					className={`md:hidden bg-neutral-100 rounded-sm shadow-md text-black-primary absolute right-16 table ${
-						isSticky ? "top-14" : "top-20 "
+					className={`md:hidden bg-neutral-100 rounded-sm shadow-md text-black-primary absolute   ${
+						isSticky ? "top-14 right-10" : "top-20 right-24"
 					} ${
-						isToggled ? "-top-[100%]" : ""
-					} transition-all duration-300 ease-in-out`}>
+						isToggled ? "h-48 top-0" : "h-0  top-0"
+					}  overflow-hidden tansition-all duration-300 ease-in-out  flex flex-col justify-between  `}>
 					{links.map((link, index) => {
 						return (
 							<Link
@@ -84,14 +84,9 @@ const Navbar: FC = (): ReactElement => {
 				<section
 					className='md:hidden text-3xl cursor-pointer'
 					onClick={() => {
-						console.log("clicked");
+						setToggled(!isToggled);
 					}}>
-					<AiOutlineMenu
-						onClick={() => {
-							setToggled(!isToggled);
-							console.log("clicked");
-						}}
-					/>
+					<AiOutlineMenu />
 				</section>
 			</nav>
 		</section>

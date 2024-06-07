@@ -1,8 +1,9 @@
 import { FaWhatsapp } from "react-icons/fa";
 import ContentLayout from "../layouts/content-layout";
 import { AiOutlineMail } from "react-icons/ai";
-import InputField from "../elements/input-field";
-import Button from "../elements/button";
+import { CiLinkedin } from "react-icons/ci";
+// import InputField from "../elements/input-field";
+// import Button from "../elements/button";
 
 const HomeContact = () => {
 	return (
@@ -24,11 +25,18 @@ const HomeContact = () => {
 					</section>
 					<section className='flex  gap-2 items-center'>
 						<AiOutlineMail />
-						<p>mariosihaloho700@gmail.com</p>6
+						<p>mariosihaloho700@gmail.com</p>
 					</section>
+					<a
+						target='_blank'
+						href='https://www.linkedin.com/in/mario-rudy-silalahi'
+						className='flex  gap-2 items-center'>
+						<CiLinkedin />
+						<p>linkedin.com/in/mario-rudy-silalahi</p>
+					</a>
 				</footer>
 			</section>
-			<form>
+			{/* <form>
 				<InputField>
 					<InputField.label htmlfor='name' label='Your Email' />
 					<InputField.input
@@ -59,7 +67,7 @@ const HomeContact = () => {
 					type='submit'
 					classname='cursor-pointer text-xl !h-10 !px-10'
 				/>
-			</form>
+			</form> */}
 		</ContentLayout>
 	);
 };
