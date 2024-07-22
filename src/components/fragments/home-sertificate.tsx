@@ -36,9 +36,9 @@ const HomeSertificate: FC = (): ReactElement => {
 				<main className='flex gap-10 flex-wrap items-center border-b pb-10 border-b-neutral-500 mb-10'>
 					<section>
 						<h1 className='font-bold text-sm secondary-gradient text-transparent bg-clip-text mb-2'>
-							CURRENT GPA
+							GPA
 						</h1>
-						<p className='font-bold text-4xl'>4 POIN</p>
+						<p className='font-bold text-4xl'>3.99 POIN</p>
 					</section>
 					<section>
 						<h1 className='font-bold text-sm secondary-gradient text-transparent bg-clip-text mb-2'>

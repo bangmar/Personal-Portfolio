@@ -48,7 +48,7 @@ export const EducationExperience = [
 	{
 		school: "Institut Teknologi Telkom Purwokerto",
 		dept: "Teknik Informatika",
-		time: "Sept 2020 - Present",
+		time: "Sept 2020 - 2024",
 		jobs: [
 			"Menjadi Koordinator Badan Urusan Rumah Tangga Dewan Perwakilan Mahasiswa Fakultas Informatika (2020) dan bertangung jawab mengurus keperluan kesekretariatan organisasi",
 			"Berperan sebagai Programmer dalam beberapa mata kuliah (Alogoritma Pemprograman, Pengembangan Web, OOP, dan lain-lain) untuk mengambangan Proyek UAS atau Tugas Besar",

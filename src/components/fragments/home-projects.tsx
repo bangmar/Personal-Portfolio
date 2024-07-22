@@ -7,10 +7,10 @@ import { Link } from "react-router-dom";
 const HomeProjects: FC = (): ReactElement => {
 	const projects = [
 		{
-			name: "Learning Experience Platform",
-			thumb: "assets/home/projects/lxp.png",
-			techs: ["Next Js", "Tailwind Css", "TypeScript"],
-			link: "https://github.com/magang-mknows/mknows-fe",
+			name: "Zyrex Maveric",
+			thumb: "assets/home/projects/zyrex.png",
+			techs: ["Next Js", "Tailwind Css", "TypeScript", "Ant Design"],
+			link: "hhttps://maveric.zyrex.com/",
 		},
 		{
 			name: "Kampus Gratis Website",
