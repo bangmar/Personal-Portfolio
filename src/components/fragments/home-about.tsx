@@ -1,18 +1,18 @@
 import { FC, ReactElement } from "react";
 import RunningText from "../elements/running-text";
 import ContentLayout from "../layouts/content-layout";
-import Button from "../elements/button";
 
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import { Link } from "react-scroll";
+import { Link as RLink } from "react-router-dom";
 
 const HomeAbout: FC = (): ReactElement => {
 	const myRoutine: Array<string> = [
+		"Programming",
 		"Slicing UI",
 		"Integrating API",
-		"Problem Solvoing",
 		"UI Design",
-		"Programming",
+		"Problem Solvoing",
 		"Team Work",
 	];
 	return (
@@ -31,16 +31,19 @@ const HomeAbout: FC = (): ReactElement => {
 						Holla, I'm Mario Rudy Silalahi
 					</h1>
 					<h2 className='text-4xl md:text-5xl  mb-4 md:mb-6 font-medium'>
-						Lucky Frontend Web Developer
+						Lucky & Passionate Web Developer
 					</h2>
 					<p className='text-sm md:text-base  mb-6 md:mb-10 lg:mb-12'>
-						I'm an Informatics Enginner Student and a React / Next JS Lover, I
-						also like to use other framework like Tailwind Css and more. Buy the
-						way, I like{" "}
-						<span className='font-bold text-sky-400 underline underline-offset-4'>
-							Typescript
-						</span>{" "}
-						more then JS. Cheers. 🍻
+						Graduated from Informatics engineering with a focus on software
+						development, especially websites. I Can be your{" "}
+						<span className='font-bold text-yellow-400 group underline underline-offset-4 '>
+							Frontend{" "}
+						</span>
+						and your{" "}
+						<span className='font-bold group text-sky-400 underline underline-offset-4'>
+							Backend.{" "}
+						</span>
+						By the way, i love Javascript. Cheers. 🍻
 					</p>
 					<section className='flex gap-4'>
 						<Link
@@ -53,13 +56,14 @@ const HomeAbout: FC = (): ReactElement => {
 							GET IN TOUCH
 						</Link>
 
-						<Button
-							classify='secondary'
-							name='download-cv'
-							teks='DOWNLOAD CV'
-							type='button'
-							disabled={false}
-						/>
+						<RLink
+							className='border-2  h-9 w-fit grid place-items-center  px-4 rounded-full  shadow-md transition-all duration-150 ease-transition border-neutral-400 hover:bg-neutral-800 hover:text-white-primary'
+							to={"assets/home/cv/CV_MARIO RUDY SILALAHI.pdf"}
+							target='_blank'
+							type='application/octet-stream'
+							download={"CV_MARIO RUDY SILALAHI.pdf"}>
+							Download CV / Resume
+						</RLink>
 					</section>
 				</aside>
 			</ContentLayout>
