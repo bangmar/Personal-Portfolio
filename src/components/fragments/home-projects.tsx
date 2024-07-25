@@ -10,7 +10,7 @@ const HomeProjects: FC = (): ReactElement => {
 			name: "Zyrex Maveric",
 			thumb: "assets/home/projects/zyrex.png",
 			techs: ["Next Js", "Tailwind Css", "TypeScript", "Ant Design"],
-			link: "hhttps://maveric.zyrex.com/",
+			link: "https://maveric.zyrex.com/",
 		},
 		{
 			name: "Kampus Gratis Website",
