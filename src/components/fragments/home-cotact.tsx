@@ -2,6 +2,7 @@ import { FaWhatsapp } from "react-icons/fa";
 import ContentLayout from "../layouts/content-layout";
 import { AiOutlineMail } from "react-icons/ai";
 import { CiLinkedin } from "react-icons/ci";
+import { Link } from "react-router-dom";
 // import InputField from "../elements/input-field";
 // import Button from "../elements/button";
 
@@ -19,10 +20,13 @@ const HomeContact = () => {
 					free to contact me.
 				</p>
 				<footer className='flex flex-col gap-2'>
-					<section className='flex gap-2 items-center'>
+					<Link
+						to={"https://wa.me/+6281327532014"}
+						target='_blank'
+						className='flex gap-2 items-center'>
 						<FaWhatsapp />
 						<p>+6281327532014</p>
-					</section>
+					</Link>
 					<section className='flex  gap-2 items-center'>
 						<AiOutlineMail />
 						<p>mariosihaloho700@gmail.com</p>

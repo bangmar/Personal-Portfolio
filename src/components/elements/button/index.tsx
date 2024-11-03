@@ -20,7 +20,7 @@ const Button: FC<TButtonProps> = ({
 	return (
 		<button
 			disabled={disabled}
-			className={`border-2  h-9 w-fit   px-4 rounded-full  shadow-md transition-all duration-150 ease-transition ${classname} ${
+			className={`border-2  py-1 w-fit   px-2 rounded-full  shadow-md transition-all duration-150 ease-transition ${classname} ${
 				classify === "primary"
 					? "secondary-gradient hover:primary-gradient border-transparent"
 					: " border-neutral-400 hover:bg-neutral-800 hover:text-white-primary"
@@ -28,7 +28,7 @@ const Button: FC<TButtonProps> = ({
 			id={name}
 			name={name}
 			type={type}>
-			<p className='text-xs md:text-sm font-bold'>{teks}</p>
+			<p className='text-xs font-bold'>{teks}</p>
 		</button>
 	);
 };

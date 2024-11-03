@@ -21,8 +21,6 @@ const Navbar: FC = (): ReactElement => {
 
 	const [isToggled, setToggled] = useState(false);
 
-	console.log("toogle status :", isToggled);
-
 	return (
 		<section
 			className={`px-8  md:flex md:px-12 lg:px-24 justify-between  items-center flex gap-16 ${
@@ -47,7 +45,7 @@ const Navbar: FC = (): ReactElement => {
 								to={link}
 								spy={true}
 								smooth={true}
-								offset={-70}
+								offset={-100}
 								duration={500}
 								key={index}>
 								<li className={`hover:text-neutral-100 ease-transition `}>
@@ -59,7 +57,7 @@ const Navbar: FC = (): ReactElement => {
 				</ul>
 				<ul
 					className={`md:hidden bg-neutral-100 rounded-sm shadow-md text-black-primary absolute   ${
-						isSticky ? "top-14 right-10" : "top-20 right-24"
+						isSticky ? "top-14 right-10" : "top-20 right-10"
 					} ${
 						isToggled ? "h-48 top-0" : "h-0  top-0"
 					}  overflow-hidden tansition-all duration-300 ease-in-out  flex flex-col justify-between  `}>

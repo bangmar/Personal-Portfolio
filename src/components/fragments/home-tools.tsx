@@ -7,6 +7,7 @@ import {
 	SiTailwindcss,
 	SiPostman,
 	SiGithub,
+	SiRedux,
 	// SiRedux,
 } from "react-icons/si";
 import { FaReact, FaFigma } from "react-icons/fa";
@@ -44,12 +45,12 @@ const HomeTools: FC = (): ReactElement => {
 				<SiTailwindcss className='text-4xl mb-2 rounded-md shadow-md text-blue-500' />
 			),
 		},
-		// {
-		// 	name: "Redux",
-		// 	icon: (
-		// 		<SiRedux className='text-4xl mb-2 rounded-md shadow-md text-purple-400' />
-		// 	),
-		// },
+		{
+			name: "Redux",
+			icon: (
+				<SiRedux className='text-4xl mb-2 rounded-md shadow-md text-purple-400' />
+			),
+		},
 		{
 			name: "VS Code",
 			icon: (
@@ -83,7 +84,8 @@ const HomeTools: FC = (): ReactElement => {
 					Tech & Tools
 				</h1>
 				<p className='text-xs md:text-sm text-neutral-300'>
-					Berikut daftar Teknologi dan Sotfwere yang saya gunakan
+					Here’s a list of the technologies and software I work with to build
+					impactful web experiences.
 				</p>
 			</header>
 			<section className='grid grid-cols-3 md:grid-cols-4 lg:grid-cols-5 px-0 gap-4 mb-4'>
