@@ -29,9 +29,8 @@ const HomeSertificate: FC = (): ReactElement => {
 			</aside>
 			<main>
 				<p className=' text-sm md:text-base mb-8'>
-					Sebagai seorang mahasiswa aktif, saya mengikuti kegiatan baik untuk
-					meingkatkan pengalaman dan pengetahuan maupun sekaedar meluangkan
-					hobby untuk memperluas relasi dan melatih softskill
+					As a Frontend Developer, I continually elevate my skills and
+					experience through engaging activities and valuable certifications.
 				</p>
 				<main className='flex gap-10 flex-wrap items-center border-b pb-10 border-b-neutral-500 mb-10'>
 					<section>
@@ -44,13 +43,13 @@ const HomeSertificate: FC = (): ReactElement => {
 						<h1 className='font-bold text-sm secondary-gradient text-transparent bg-clip-text mb-2'>
 							Web Experience
 						</h1>
-						<p className='font-bold text-4xl'>1-2 Years</p>
+						<p className='font-bold text-4xl'>2 Years</p>
 					</section>
 					<section>
 						<h1 className='font-bold text-sm secondary-gradient text-transparent bg-clip-text mb-2'>
 							Sertificate
 						</h1>
-						<p className='font-bold text-4xl'>4+ Earned</p>
+						<p className='font-bold text-4xl'>6+ Earned</p>
 					</section>
 				</main>
 				<footer className=' overflow-x-auto snap-x snap-mandatory '>

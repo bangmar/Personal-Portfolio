@@ -45,24 +45,24 @@ const HomeAbout: FC = (): ReactElement => {
 						</span>
 						By the way, i love Javascript. Cheers. 🍻
 					</p>
-					<section className='flex gap-4'>
+					<section className='flex gap-4 flex-wrap'>
 						<Link
 							spy={true}
 							smooth={true}
 							offset={-90}
 							duration={500}
 							to='Contact'
-							className='secondary-gradient hover:primary-gradient border-transparent border-2  h-9 w-fit   px-4 rounded-full  shadow-md transition-all duration-150 ease-transition grid place-items-center'>
+							className='secondary-gradient hover:primary-gradient border-transparent border-2  h-9 md:w-fit w-full  text-xs md:text-sm lg:text-base  px-4 rounded-full  shadow-md transition-all duration-150 ease-transition grid place-items-center'>
 							GET IN TOUCH
 						</Link>
 
 						<RLink
-							className='border-2  h-9 w-fit grid place-items-center  px-4 rounded-full  shadow-md transition-all duration-150 ease-transition border-neutral-400 hover:bg-neutral-800 hover:text-white-primary'
+							className='border-2  h-9 w-full md:w-fit  text-xs md:text-sm lg:text-base grid place-items-center  px-4 rounded-full  shadow-md transition-all duration-150 ease-transition border-neutral-400 hover:bg-neutral-800 hover:text-white-primary'
 							to={"assets/home/cv/CV_MARIO RUDY SILALAHI.pdf"}
 							target='_blank'
 							type='application/octet-stream'
 							download={"CV_MARIO RUDY SILALAHI.pdf"}>
-							Download CV / Resume
+							Download CV
 						</RLink>
 					</section>
 				</aside>

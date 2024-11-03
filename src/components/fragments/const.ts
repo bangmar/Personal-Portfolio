@@ -46,7 +46,7 @@ export const worksExperience = [
 
 export const EducationExperience = [
 	{
-		school: "Institut Teknologi Telkom Purwokerto",
+		school: "Universitas Telkom Purwokerto",
 		dept: "Teknik Informatika",
 		time: "Sept 2020 - 2024",
 		jobs: [

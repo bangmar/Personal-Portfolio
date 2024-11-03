@@ -7,9 +7,39 @@ import { Link } from "react-router-dom";
 const HomeProjects: FC = (): ReactElement => {
 	const projects = [
 		{
+			name: "AbangGas",
+			thumb: "assets/home/projects/gagas.png",
+			techs: ["Next Js", "JavaScript", "Material UI", "SASS"],
+			link: "#",
+		},
+		{
+			name: "Pertamina NRE",
+			thumb: "assets/home/projects/pertamina.png",
+			techs: ["Next Js", "SASS", "JavaScript"],
+			link: "https://www.pertaminanre.com/",
+		},
+		{
+			name: "Petrokimia Gresik",
+			thumb: "assets/home/projects/petrokimia.png",
+			techs: ["React Js", "Redux", "JavaScript", "Ant Design", "SASS"],
+			link: "#",
+		},
+		{
+			name: "GAIN Sistem Pangan Nasional",
+			thumb: "assets/home/projects/gain.png",
+			techs: ["Next Js", "JavaScript", "Material UI", "SASS"],
+			link: "https://dspi.bappenas.go.id/",
+		},
+		{
+			name: "Tanito",
+			thumb: "assets/home/projects/tanito.png",
+			techs: ["Next Js", "JavaScript", "Material UI", "SASS"],
+			link: "#",
+		},
+		{
 			name: "Zyrex Maveric",
 			thumb: "assets/home/projects/zyrex.png",
-			techs: ["Next Js", "Tailwind Css", "TypeScript", "Ant Design"],
+			techs: ["Next Js", "Tailwind Css", "TypeScript", "Ant Design", "Recoil"],
 			link: "https://maveric.zyrex.com/",
 		},
 		{
@@ -24,18 +54,6 @@ const HomeProjects: FC = (): ReactElement => {
 			techs: ["Next Js", "Tailwind Css", "TypeScript"],
 			link: "https://egrotek.id/login",
 		},
-		{
-			name: "Shoping Cart with Redux",
-			thumb: "assets/home/projects/cart.png",
-			techs: ["React Js", "Tailwind Css", "Redux"],
-			link: "https://github.com/bangmar/Cart-Redux",
-		},
-		{
-			name: "Midterm Project Art website",
-			thumb: "assets/home/projects/retro.png",
-			techs: ["React Js", "Tailwind Css", "Firebase"],
-			link: "https://bangmar.github.io/retro_art_comunnity/",
-		},
 	];
 
 	return (
@@ -46,54 +64,25 @@ const HomeProjects: FC = (): ReactElement => {
 						Projects
 					</h1>
 					<p className='text-xs md:text-sm text-neutral-200'>
-						Berikut Projects terakhr yang saya kerjakan selama mengikuti
-						kegiatan Magang Bersertifikat MSIB V di PT Menara Indonesia (M-Knows
-						Consulting) yaitu pengembangan Platform Learning Experience Platform
-						dan Kampus Gratis dari sisi antar muka atau Frontend Development dan
-						bebrapa project pribadi untuk meningkatkan skill. atau bisa kunjungi
-						repositori saya{" "}
+						Here’s a showcase of my recent projects as a Frontend Web Developer,
+						where I brought innovative ideas to life through clean, responsive
+						design and interactive experiences. Dive into more of my work by
+						visiting{" "}
 						<Link
 							to={"https://github.com/bangmar"}
 							className='font-bold underline underline-offset-4 text-gradient-via1'
 							target='_blank'>
-							disini
+							my repository here!
 						</Link>
 					</p>
 				</header>
 			</ContentLayout>
 			<ContentLayout classname='xl:!grid-cols-2 lg:!grid-cols-1 !py-2 '>
-				{projects.slice(0, 2).map(({ name, techs, thumb, link }, index) => {
+				{projects.map(({ name, techs, thumb, link }, index) => {
 					return (
 						<Card key={index} link={link}>
 							<Card.Image src={thumb} name={name} />
 							<Card.Description title={name} subtitle='Tech'>
-								<footer>
-									<section className='flex gap-2 flex-wrap'>
-										{techs.map((tech, index) => {
-											return (
-												<Button
-													key={index}
-													classify='primary'
-													name={name}
-													teks={tech}
-													type='reset'
-													classname='cursor-default'
-												/>
-											);
-										})}
-									</section>
-								</footer>
-							</Card.Description>
-						</Card>
-					);
-				})}
-			</ContentLayout>
-			<ContentLayout classname='xl:!grid-cols-3 !py-0'>
-				{projects.slice(2).map(({ name, techs, thumb, link }, index) => {
-					return (
-						<Card key={index} link={link}>
-							<Card.Image src={thumb} name={name} />
-							<Card.Description title={name} subtitle='Tech' size='small'>
 								<footer>
 									<section className='flex gap-2 flex-wrap'>
 										{techs.map((tech, index) => {

@@ -13,33 +13,19 @@ const Footer: FC = (): ReactElement => {
 		{ icon: <FaGithub />, link: "https://github.com/bangmar" },
 	];
 
-	const navgigationLinks = [
-		{
-			name: "Blog",
-			link: "/",
-		},
-		{
-			name: "Download CV",
-			link: "/",
-		},
-	];
-
 	return (
 		<ContentLayout classname='!grid-cols-1 !mb-0 !pb-20'>
 			<section className='flex flex-col gap-y-2 mb-6 md:mb-0 md:flex-row md:justify-between border-t-2 pt-8 border-neutral-600 md:items-center'>
 				<h1 className='font-bold text-2xl'>MARIO S.</h1>
 				<section className='flex gap-6 items-center text-sm '>
-					{navgigationLinks.map(({ link, name }, index) => {
-						return (
-							<Link
-								key={index}
-								to={link}
-								className='relative group text-neutral-400 hover:text-neutral-200 cursor-pointer ease-transition '>
-								<span>{name}</span>
-								<span className='absolute -bottom-1 left-0 w-0 h-0.5 primary-gradient ease-transition  group-hover:w-full'></span>
-							</Link>
-						);
-					})}
+					<Link
+						className='border-b-2  h-9 w-fit grid place-items-center  px-4  shadow-md transition-all duration-150 ease-transition border-b-neutral-400 hover:bg-neutral-800 hover:text-white-primary'
+						to={"assets/home/cv/CV_MARIO RUDY SILALAHI.pdf"}
+						target='_blank'
+						type='application/octet-stream'
+						download={"CV_MARIO RUDY SILALAHI.pdf"}>
+						Download CV / Resume
+					</Link>
 				</section>
 			</section>
 			<section className='flex gap-y-4 flex-col md:flex-row md:justify-between md:items-center'>
