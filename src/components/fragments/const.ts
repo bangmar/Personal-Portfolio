@@ -1,68 +1,54 @@
 export const worksExperience = [
 	{
-		company: "PT Sagara Technology | Remote Jakarta Selatan",
-		role: "Frontend Developer Frelance",
-		time: "Jan 24 - Mar 24",
+		company: "PT Nutech Integrasi | Jakarta Selatan",
+		role: "Frontend Developer",
+		time: "Dec 24 - Present",
 		jobs: [
-			"Slicing UI atau mengkonversi desain untuk Backoffice dan Customer Side website penjualaran produk untuk sebuah brand laptop kedalam lebih dari 10 Halaman dengan Next Js Typescript dan Tailwind",
-			"Mengkonsumsi API yang disediakan oleh backend dengan library React Query dan Axio Axios untuk melakukan CRUD",
-			"Menerapkan state management dengan Recoil untuk fitur keranjang dan ineteraksi penguna",
-			"Melakukan push dan kode check menggunakan Gitlab sebagai Media Kolaborasi",
+			"Developed enterprise web applications including Logistics System (POS Logistik Indonesia) and Executive Dashboard (LRT Jabodebek)",
+			"Implemented Redis caching to reduce redundant API calls and improve application performance",
+			"Introduced React TanStack Query and Zustand to improve maintainability and reduce code complexity",
+			"Led development as Frontend PIC for Order Management System (OMS) and ensured production quality",
 		],
 	},
 	{
-		company: "PT Menara Indonesia | Tanggerang Selatan",
+		company: "PT Sagara Technology | Jakarta Selatan",
+		role: "Frontend Developer",
+		time: "Jan 24 - Dec 24",
+		jobs: [
+			"Delivered multiple web projects including Pertamina NRE, Zyrex Maverick, Dashboard Pangan Nasional, and Procurement System",
+			"Handled feature development, bug fixing, and maintenance across multiple codebases",
+			"Improved Pertamina NRE performance by migrating CSR to SSR, reducing page load time by ~50%",
+			"Implemented Recoil state management to improve code readability and scalability",
+		],
+	},
+	{
+		company: "PT Menara Pengetahuan Indonesia | Tangerang Selatan",
 		role: "Frontend Developer Intern",
 		time: "Feb 23 - Jun 23",
 		jobs: [
-			"Terlibat dalam Proyek Kampus Gratis dan bertanggungjawab menjadi PIC proyek LXP yang beranggotakan 3 Orang mengunakan Next Js 13",
-			"Melakukan Konversi Design kedalam Kode Program mengunakan Framework Next JS Typescript dan TailwindCSS ",
-			"Mengintegrasikan API dari Backend Mengunakan React Query dan Axios serta melakukan pengecekan endpoint mengunakan Postman",
-			"Mengunakan GitHub sebagai Media Kolaborasi",
-			"Melaksanakan SCRUM sebagai metode pengembangan Softwere",
+			"Developed responsive Learning Management System (LMS) pages and integrated backend APIs",
+			"Delivered frontend features and resolved multiple issues to improve user experience",
+			"Presented weekly progress and collaborated with cross-functional teams",
 		],
 	},
 	{
-		company: "Egrotek | Teluk Purwokerto",
-		role: "Frontend Programmer",
-		time: "Agust 22 - Des 22",
+		company: "Egrotek | Purwokerto",
+		role: "Frontend Developer Intern",
+		time: "Jun 22 - Dec 22",
 		jobs: [
-			"Bekerja sama bersama tim dalam pengembangan Platform Dashboard Minitoring Perangkat IOT",
-			"Mengembangan Platform mengunakan React Js dan Firebase",
-			"Melkukan styling mengunakan Framework Tailwind Css",
+			"Built responsive dashboard pages for IoT device monitoring platform",
+			"Implemented state management and integrated Firebase for real-time data synchronization",
+			"Improved dashboard performance and data handling",
 		],
 	},
 	{
 		company: "Institut Teknologi Telkom Purwokerto",
-		role: "Asisten Praktikum Sistem Informasi",
-		time: "Mei 21 - Agust 22",
+		role: "Teaching Assistant – Information System",
+		time: "May 21 - Aug 22",
 		jobs: [
-			"Menjadi Asisten Praktikum pada mata kuliah Jaringan Komunikasi dan Data",
-			"Bekerja sama dalam tim 2 orang untuk memaparkan teori dan praktik pada modul",
-			"Mengoperasikan Cisco Packet Tracer dan melakukan pengecekan laporan praktikum",
-		],
-	},
-];
-
-export const EducationExperience = [
-	{
-		school: "Universitas Telkom Purwokerto",
-		dept: "Teknik Informatika",
-		time: "Sept 2020 - 2024",
-		jobs: [
-			"Menjadi Koordinator Badan Urusan Rumah Tangga Dewan Perwakilan Mahasiswa Fakultas Informatika (2020) dan bertangung jawab mengurus keperluan kesekretariatan organisasi",
-			"Berperan sebagai Programmer dalam beberapa mata kuliah (Alogoritma Pemprograman, Pengembangan Web, OOP, dan lain-lain) untuk mengambangan Proyek UAS atau Tugas Besar",
-			"Terlibat menjadi Asisten Praktikum Mata Kuliah Jaringan Komunikasi dan Data pada Prodi Sistem Informasi",
-		],
-	},
-	{
-		school: "SMK Telkom Purwokerto",
-		dept: "Teknik Jaringan dan Komputer",
-		time: "Juni 2017 - Juni 2020",
-		jobs: [
-			"Menjadi Perwakilan sekolah dalam Olimpiade Jaringan APJII (2019)",
-			"Penerima Beasiswa OPES untuk melanjutkan studi di IT Telkom Purwokerto",
-			"Menjadi Wakil Ketua Organisasi Pemuda Kristiani SMK Telkom Purwokerto",
+			"Assisted networking and data communication practical sessions",
+			"Delivered learning materials and evaluated student assignments",
+			"Used Cisco Packet Tracer for simulation and hands-on activities",
 		],
 	},
 ];

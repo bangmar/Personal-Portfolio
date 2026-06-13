@@ -16,7 +16,7 @@ const HomeContact = () => {
 				<p className='text-neutral-300 text-sm md:text-base mb-8'>
 					Honestly, if you're a UI/UX Designer, Projects Manager, Backend
 					Developer and you all need a guy that will happyly help your projects
-					from client side or Frontend Developement using React or Next Js, fell
+					from  Frontend Developement using any tools, feel
 					free to contact me.
 				</p>
 				<footer className='flex flex-col gap-2'>
@@ -29,7 +29,7 @@ const HomeContact = () => {
 					</Link>
 					<section className='flex  gap-2 items-center'>
 						<AiOutlineMail />
-						<p>mariosihaloho700@gmail.com</p>
+						<p>mariorudysilalahi@gmail.com</p>
 					</section>
 					<a
 						target='_blank'
