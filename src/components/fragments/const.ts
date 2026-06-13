@@ -52,3 +52,28 @@ export const worksExperience = [
 		],
 	},
 ];
+
+
+
+export const EducationExperience = [
+	{
+		school: "Universitas Telkom Purwokerto",
+		dept: "Teknik Informatika",
+		time: "Sept 2020 - 2024",
+		jobs: [
+			"Menjadi Koordinator Badan Urusan Rumah Tangga Dewan Perwakilan Mahasiswa Fakultas Informatika (2020) dan bertangung jawab mengurus keperluan kesekretariatan organisasi",
+			"Berperan sebagai Programmer dalam beberapa mata kuliah (Alogoritma Pemprograman, Pengembangan Web, OOP, dan lain-lain) untuk mengambangan Proyek UAS atau Tugas Besar",
+			"Terlibat menjadi Asisten Praktikum Mata Kuliah Jaringan Komunikasi dan Data pada Prodi Sistem Informasi",
+		],
+	},
+	{
+		school: "SMK Telkom Purwokerto",
+		dept: "Teknik Jaringan dan Komputer",
+		time: "Juni 2017 - Juni 2020",
+		jobs: [
+			"Menjadi Perwakilan sekolah dalam Olimpiade Jaringan APJII (2019)",
+			"Penerima Beasiswa OPES untuk melanjutkan studi di IT Telkom Purwokerto",
+			"Menjadi Wakil Ketua Organisasi Pemuda Kristiani SMK Telkom Purwokerto",
+		],
+	},
+];
