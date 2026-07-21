@@ -35,7 +35,7 @@ const Navbar: FC = (): ReactElement => {
 				smooth={true}
 				offset={-90}
 				duration={500}>
-				個人のポートフォリオ
+				ートフォリオ
 			</Link>
 			<nav className='flex items-center'>
 				<ul className='md:flex justify-end items-center hidden pl-4 py-4  gap-4 md:text-neutral-300 text-sm'>
