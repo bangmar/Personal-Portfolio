@@ -12,7 +12,6 @@ const HomeSertificate: FC = (): ReactElement => {
 		"sre",
 		"upgrading",
 		"dialofa",
-		"futsal",
 	];
 
 	const [isOpen, setOpen] = useState<string>("");
@@ -47,7 +46,7 @@ const HomeSertificate: FC = (): ReactElement => {
 					</section>
 					<section>
 						<h1 className='font-bold text-sm secondary-gradient text-transparent bg-clip-text mb-2'>
-							Sertificate
+							Certificate
 						</h1>
 						<p className='font-bold text-4xl'>6+ Earned</p>
 					</section>
