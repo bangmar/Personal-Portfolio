@@ -46,13 +46,13 @@ const HomeProjects: FC = (): ReactElement => {
 			name: "Kampus Gratis Website",
 			thumb: "assets/home/projects/kg.png",
 			techs: ["Next Js", "Tailwind Css", "TypeScript"],
-			link: "https://github.com/magang-mknows/mknows-fe",
+			link: "https://kampusgratis.id/",
 		},
 		{
 			name: "IoT Monitoring Dashboard",
 			thumb: "assets/home/projects/iot.png",
 			techs: ["Next Js", "Tailwind Css", "TypeScript"],
-			link: "https://egrotek.id/login",
+			link: "#",
 		},
 	];
 
